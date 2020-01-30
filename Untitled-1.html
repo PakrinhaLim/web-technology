@@ -3,19 +3,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
+<script type="text/javascript">
+	function show_alert(){
+		ptext = prompt(x+y);
+		alert(ptext);
+	}
+</script>
 </head>
 
 <body>
 <script type="text/javascript">
 	x=5;
-	y=5;
+	y=1;
 	document.write("<h1>hello world"+(x+y)+"</h1>");
-//	document.write(x+y);
+
 //if(x==y)
 //	document.write("true");
 //else
 //	document.write("false");
-	document.write(x==y?"true":"false");
+//	document.write(x==y?"true":"false");
+
 </script>
+	<input type="button" onClick="show_alert()" value="Show alert box" />
 </body>
 </html>
