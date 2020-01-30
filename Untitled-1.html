@@ -4,9 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <script type="text/javascript">
-	function show_alert(){
+	function show_alert()
+	{
 		ptext = prompt(x+y);
 		alert(ptext);
+	}
+	function multiply(x, y)
+	{
+		return x*y;
 	}
 </script>
 </head>
@@ -14,8 +19,9 @@
 <body>
 <script type="text/javascript">
 	x=5;
-	y=1;
+	y=3;
 	document.write("<h1>hello world"+(x+y)+"</h1>");
+	document.write("<h1>"+multiply(x,y)+"</h1>");
 
 //if(x==y)
 //	document.write("true");
