@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="Geeks_for_Geeks.css"?>
+<!-- <heading>
+	<title>F**kMee</title> -->
+	<Myfriends>
+		<friend>
+			<id>60023124</id>
+			<fname>Pakrinha</fname>
+			<lname>Lim</lname>
+			<address>19 ม.2 ต.แม่กา อ.เมือง จ.พะเยา </address>
+			<birthdate>00/00/0000</birthdate>
+		</friend>
+
+		<friend>
+			<id>60023113</id>
+			<fname>Kimmeng</fname>
+			<lname>Hao</lname>
+			<address>19 ม.2 ต.แม่กา อ.เมือง จ.พะเยา </address>
+			<birthdate>00/00/0000</birthdate>
+		</friend>
+
+		<friend>
+			<id>60023124</id>
+			<fname>Parkarn</fname>
+			<lname>Kamsee</lname>
+			<address>19 ม.7 ต.เด่นชัย อ.เด่นชัย จ.แพร่</address>		
+			<birthdate>00/00/0000</birthdate>
+		</friend>
+	</Myfriends>
+<!-- </heading> -->
