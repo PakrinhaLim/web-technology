@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+
+<body>
+<script type="text/javascript">
+var x;
+var mycars = new Array();
+mycars[0] = "Saab";
+mycars[1] = "Volvo";
+mycars[2] = "BMW";
+mycars[3] = "Benz";
+document.write("<h1>I have "+mycars.length+" cars</h1>")
+for(x in mycars)
+	document.write("<h1>"+mycars[x].toUpperCase()+"</h1><br>")
+var today = new Date();
+document.write("<h1> Today is "+today+"</h1>");
+var y = prompt("Enter a number between 0 and 10:","");
+try{
+	if(y>10)
+		throw "Err1";
+	else if(y<0)
+		throw "Err2";
+	else if(isNaN(y))
+		throw "Err3";
+}
+catch(er){
+	if(er=="Err1")
+		alert("Error! The value is too high");
+	if(er=="Err2")
+		alert("Error! The value is too low");
+	if(er=="Err3")
+		alert("Error! The value is not a number");
+}
+document.write("<h1>Number "+ y +"</h1>")
+</script>
+</body>
+</html>
