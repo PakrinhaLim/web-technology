@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="intro">Hello World!!!</p>
+<!-- <p id="intro3">Hello F**kMe!!!</p> -->
+<input type="button" value="Change Background Color" onClick="changeBgColor()"/>
+<input type="button" value="Change Text" onClick="changeText()"/>
+<input type="button" value="Change Font Family and Color" onClick="changeFontColor()"/>
+<script type="text/javascript">
+	var iter = 0;
+	function changeBgColor(){
+		if(document.body.bgColor == "white" || document.body.bgColor == "red")
+			document.body.bgColor = "green";
+		else
+			document.body.bgColor = "red";
+	}
+	function changeText(){
+		if(iter % 2 == 0)
+			document.getElementById("intro").innerHTML = "Hi World!!!";
+		else
+			document.getElementById("intro").innerHTML = "Hello World!!!";
+		
+		iter++;
+	}
+	function changeFontColor(){
+		if(iter % 2 == 0){
+			document.body.style.fontFamily = "Arial";
+			document.body.style.color = "purple";
+		}
+		else{
+			document.body.style.fontFamily = "Time New Roman";
+			document.body.style.color = "blue";
+		}
+		iter++;
+	}
+// 	txt = document.getElementsByTagName("p");
+// 	for(i=0 ; i < txt.length ; i++){
+//		document.write( txt[i].innerHTML + "<br>");
+// 	}
+
+</script>
+</body>
+
+</html>

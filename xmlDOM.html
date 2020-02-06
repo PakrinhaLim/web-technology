@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="loadxmldoc.js">
+</script>
+</head>
+<body>
+<script type="text/javascript">
+
+var x=xmlDoc.getElementsByTagName('fname');
+var y=xmlDoc.getElementsByTagName('lname');
+for (i=0;i<x.length;i++)
+{
+document.write(x[i].childNodes[0].nodeValue+" "+y[i].childNodes[0].nodeValue)
+document.write("<br />")
+}
+</script>
+</body>
+</html>
