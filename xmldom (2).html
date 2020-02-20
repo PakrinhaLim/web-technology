@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="loadxmldoc.js"> 
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+   <p id ="demo">My friend</p>
+ 
+   <table width="300" border="1">
+     <tr>
+        <th scope="col">คำนำหน้า</th>
+        <th scope="col">ชื่อ</th>
+        <th scope="col">นามสกุล</th>
+     </tr>
+
+
+   <script type="text/javascript">
+   var newNode = xmlDoc.createElement("friend");
+   var newfname = xmlDoc.createElement("fname");
+   var newText = xmlDoc.createTextNode("วัชรากร");
+
+   var newatt = xmlDoc.createAttribute("title");
+   newatt.value = "นาย";
+
+   var newlname = xmlDoc.createElement("lname");
+   var newText2 = xmlDoc.createTextNode("ถิ่นทะแลบ");
+   newfname.appendChild(newText);
+   newlname.appendChild(newText2);
+   newNode.appendChild(newfname);
+   newNode.appendChild(newlname);
+   newfname.setAttributeNode(newatt);
+
+   xmlDoc.documentElement.appendChild(newNode);
+
+   x = xmlDoc.getElementsByTagName('fname');
+   y = xmlDoc.getElementsByTagName('lname');
+z = y[3].childNodes[0]
+z.replaceData(6,9,"ดอก")
+
+
+   for (i=0; i<x.length; i++)
+    {
+        var attlist = x.item(i).attributes;
+        var att=attlist.getNamedItem("title");
+
+        document.write("<tr>");
+        document.write("<td>");
+        document.write(att.value);
+        document.write("</td>");
+        document.write("<td>");
+        document.write(" ");
+        document.write(x[i].childNodes[0].nodeValue);
+        document.write("</td>");
+        document.write("<td>");
+        document.write(" ");
+        document.write(y[i].childNodes[0].nodeValue);
+        document.write("</td>");
+        document.write("</tr>");
+    }
+
+    </script>
+    </table>
+
+</body>
+</html>
